@@ -1,4 +1,4 @@
-# Visual Product Measurement System
+# AI Powered Visual Product Measurement System
 
 An AI-powered system to measure product dimensions from images using a reference object.
 Now architected as scalable Microservices.
