@@ -32,6 +32,13 @@ To improve scalability and separation of concerns, the system is split into sepa
   - Handling LLM interactions (Groq/OpenAI).
   - Image processing.
   - Stateless execution.
+### Website Visuals
+![A screenshot of the project](image1.png)
+![A screenshot of the project](image.png)
+![A screenshot of the project](imagecopy3.png)
+![A screenshot of the project](imagecopy2.png)
+
+
 
 ### Directory Structure
 ```text
