@@ -1,6 +1,6 @@
-# AI-Powered Visual Product Measurement System
+# Visual Product Measurement System
 
-A strictly visual-only product analysis system that uses AI to extract objective measurements (continuous dimensions and discrete attributes) from product images.
+An AI-powered system to measure product dimensions from images using a reference object.
 Now architected as scalable Microservices.
 
 ## Features
