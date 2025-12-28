@@ -35,8 +35,6 @@ To improve scalability and separation of concerns, the system is split into sepa
 ### Website Visuals
 ![A screenshot of the project](image1.png)
 ![A screenshot of the project](image.png)
-![A screenshot of the project](imagecopy3.png)
-![A screenshot of the project](imagecopy2.png)
 
 
 
@@ -67,7 +65,8 @@ To improve scalability and separation of concerns, the system is split into sepa
 └── tests/
     └── test_api.py
 ```
-
+### System Architecture and Flow Diagram
+![A screenshot of the project](FlowChartVisualMeasureAi.png)
 ## Setup & Running
 
 ### Prerequisites
