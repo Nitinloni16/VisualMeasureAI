@@ -61,30 +61,6 @@ To improve scalability and separation of concerns, the system is split into sepa
     └── test_api.py
 ```
 
-### System Architecture & Fallback Logic
-
-```mermaid
-graph TD
-    User[User / Frontend] -->|HTTP Request| Gateway[Gateway Service :8000]
-    Gateway -->|Forward Request| Vision[Vision Service :8001]
-    
-    subgraph Vision Logic
-        Vision -->|Start Analysis| CheckConfig{Provider Config}
-        CheckConfig -->|LLM_PROVIDER="groq"| TryGroq[Attempt Groq API]
-        CheckConfig -->|LLM_PROVIDER="mock"| SmartMock[Smart Mock Generator]
-        
-        TryGroq -->|Success| SuccessResult[Return Analysis]
-        TryGroq --x|Error / No Key| Fallback[**Fallback Triggered**]
-        
-        Fallback -->|Switch to Backup| SmartMock
-        SmartMock -->|Generate Dynamic Result based on Hash| SuccessResult
-    end
-    
-    SuccessResult --> Vision
-    Vision --> Gateway
-    Gateway --> User
-```
-
 ## Setup & Running
 
 ### Prerequisites
